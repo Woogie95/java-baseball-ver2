@@ -6,6 +6,8 @@ import static baseball.ComputerNumber.MAXIMUM_STORAGE_SIZE;
 
 public class Manager {
 
+    private static final String RESTART_NUMBER = "1";
+
     public void runBaseball() {
         Output.printBaseBallStartMessage();
         boolean restart = true;
@@ -18,7 +20,7 @@ public class Manager {
                 int total = userNumber.findTotalContain(computerNumbers);
                 int strike = userNumber.findStrike(computerNumbers);
                 int ball = total - strike;
-                Count.count(ball, strike);
+                MatchCount.count(ball, strike);
                 retry = !isGameStart(strike);
             }
             Output.printBaseBallEndMessage();
@@ -27,11 +29,11 @@ public class Manager {
     }
 
     private boolean isGameStart(int strike) {
-        return strike == MAXIMUM_STORAGE_SIZE; // 3 3
+        return strike == MAXIMUM_STORAGE_SIZE;
     }
 
     private boolean isSelectRetry() {
-        return Input.inputRestartNumber().equals("1");
+        return Input.inputRestartNumber().equals(RESTART_NUMBER);
     }
 
 }

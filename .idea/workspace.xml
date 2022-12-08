@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ebad4f7b-fccd-409e-84b0-2f8c1ef3cf49" name="Changes" comment="refactor: 곤란하네???">
+    <list default="true" id="ebad4f7b-fccd-409e-84b0-2f8c1ef3cf49" name="Changes" comment="refactor: 완료">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/baseball/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/baseball/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/baseball/Comparison.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/baseball/Count.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/baseball/ComputerNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/baseball/ComputerNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/baseball/Count.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/baseball/MatchCount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/baseball/Input.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/baseball/Input.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/baseball/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/baseball/Manager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/baseball/Output.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/baseball/Output.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/baseball/Result.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/baseball/UserNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/baseball/UserNumber.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -86,7 +83,7 @@
       <workItem from="1670233147426" duration="68508000" />
       <workItem from="1670497823493" duration="284000" />
       <workItem from="1670498177070" duration="301000" />
-      <workItem from="1670498485079" duration="685000" />
+      <workItem from="1670498485079" duration="6264000" />
     </task>
     <task id="LOCAL-00001" summary="feat: Init Commit Test">
       <created>1670234028391</created>
@@ -172,7 +169,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670484805290</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="refactor: 완료">
+      <created>1670499194536</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1670499194536</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,7 +206,8 @@
     <MESSAGE value="feat: 입력 및 관련하여 출력 메시지" />
     <MESSAGE value="feat: 1차" />
     <MESSAGE value="refactor: 곤란하네???" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: 곤란하네???" />
+    <MESSAGE value="refactor: 완료" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: 완료" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

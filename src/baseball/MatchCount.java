@@ -2,7 +2,7 @@ package baseball;
 
 import static baseball.UserNumber.DEFAULT_VALUE;
 
-public class Count {
+public class MatchCount {
 
     public static void count(int ball, int strike) {
         countStrike(ball, strike);
