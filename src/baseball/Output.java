@@ -6,16 +6,16 @@ public class Output {
         System.out.println("숫자 야구 게임을 시작합니다.");
     }
 
-    public static void printStrikeCaseMessage(Result result) {
-        System.out.println(result.getStrike() + "스트라이크");
+    public static void printStrikeCaseMessage(int strike) {
+        System.out.println(strike + "스트라이크");
     }
 
-    public static void printBallCaseMessage(Result result) {
-        System.out.println(result.getBall() + "볼");
+    public static void printBallCaseMessage(int ball) {
+        System.out.println(ball + "볼");
     }
 
-    public static void printStrikeWithBallCaseMessage(Result result) {
-        System.out.println(result.getBall() + "볼" + " " + result.getStrike() + "스트라이크");
+    public static void printStrikeWithBallCaseMessage(int ball, int strike) {
+        System.out.println(ball + "볼" + " " + strike + "스트라이크");
     }
 
     public static void printNothingMessage() {

@@ -10,13 +10,15 @@ package baseball;
 //if문 else 지양하기
 //for문 fori 지양하기
 public class Application {
-    public static void main(String[] args) { //구현능력 부족하다. 내가 만든 클래스를 활용해서 만들려니 처음 의도(계획)과 달라지니 연결 불가능
-        try { //숫자야구 5번은 넘게 했다.
-            Manager manager = new Manager(); //쉽게 생각했다.
-            manager.runBaseball(); //만든 부분에 대해서만 피드백을 할 것 이다.
-        } catch (IllegalArgumentException exceptionMessage) {
-            throw new IllegalArgumentException(exceptionMessage.getMessage());
-
+    public static void main(String[] args) {
+        try {
+            Manager manager = new Manager();
+            manager.runBaseball();
+        } catch (IllegalArgumentException msg) { // NumberFormatException 이 Illegal 상속 받고 있으므로 Illegal 로 catch
+            System.out.println(msg.getMessage());
+        } catch (Exception msg) {
+            System.out.println("알수 없는 예외가 발생하였습니다.");
         }
     }
+
 }

@@ -8,10 +8,10 @@ public class ComputerNumber {
     public static final int MAXIMUM_VALUE = 9;
     public static final int MAXIMUM_STORAGE_SIZE = 3;
 
-    public static List<Integer> computerRandomNumber() {
+    public static List<Integer> createComputerRandomNumber() {
         Set<Integer> tempRandomNumber = new LinkedHashSet<>();
         Random random = new Random();
-        while (tempRandomNumber.size() != MAXIMUM_STORAGE_SIZE) {
+        while (tempRandomNumber.size() < MAXIMUM_STORAGE_SIZE) {
             tempRandomNumber.add(random.nextInt(MAXIMUM_VALUE) + MINIMUM_VALUE);
         }
         return new ArrayList<>(tempRandomNumber);

@@ -2,36 +2,35 @@ package baseball;
 
 import java.util.List;
 
+import static baseball.ComputerNumber.MAXIMUM_STORAGE_SIZE;
+
 public class Manager {
 
-    public void runBaseball() { //옛날과 다를게 없다.
+    public void runBaseball() {
         Output.printBaseBallStartMessage();
-        boolean isBaseballRestart = true;
-        while (isBaseballRestart) {
-            List<Integer> computerNumber = ComputerNumber.computerRandomNumber();
-            isBaseballRestart = false;
-            while (true) {
-                Result result = new Result();
-                result.findResult(new UserNumber(Input.inputNumber()), computerNumber);
-                Comparison.compare(result);
-                if (isRestart(result)) {
-                    break;
-                }
-                isBaseballRestart = true;
+        boolean restart = true;
+        while (restart) {
+            List<Integer> computerNumbers = ComputerNumber.createComputerRandomNumber();
+            System.out.println(computerNumbers);
+            boolean retry = true;
+            while (retry) {
+                UserNumber userNumber = new UserNumber(Input.inputNumber());
+                int total = userNumber.findTotalContain(computerNumbers);
+                int strike = userNumber.findStrike(computerNumbers);
+                int ball = total - strike;
+                Count.count(ball, strike);
+                retry = !isGameStart(strike);
             }
-        }
-
-    }
-
-    public boolean isRestart(Result result) {
-        if (result.getStrike() == 3) {
             Output.printBaseBallEndMessage();
-            return isRetry();
+            restart = isSelectRetry();
         }
-        return false;
     }
 
-    public boolean isRetry() {
+    private boolean isGameStart(int strike) {
+        return strike == MAXIMUM_STORAGE_SIZE; // 3 3
+    }
+
+    private boolean isSelectRetry() {
         return Input.inputRestartNumber().equals("1");
     }
 
