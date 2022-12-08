@@ -7,6 +7,8 @@ import java.util.Set;
 
 public class UserNumber {
 
+    public static final int REPEAT_INITIAL_VALUE = 0;
+
     private final List<Integer> userNumbers;
 
     public UserNumber(String userNumber) {
@@ -21,7 +23,7 @@ public class UserNumber {
 
     public List<String> divideUserNumber(String userNumber) {
         List<String> tempNumbers = new ArrayList<>();
-        for (int i = 0; i < userNumber.length(); i++) {
+        for (int i = REPEAT_INITIAL_VALUE; i < userNumber.length(); i++) {
             tempNumbers.add(String.valueOf(userNumber.charAt(i)));
         }
         return tempNumbers;

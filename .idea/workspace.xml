@@ -4,15 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ebad4f7b-fccd-409e-84b0-2f8c1ef3cf49" name="Changes" comment="feat: 유저 숫자 검증 및 저장">
+    <list default="true" id="ebad4f7b-fccd-409e-84b0-2f8c1ef3cf49" name="Changes" comment="feat: 입력 및 관련하여 출력 메시지">
       <change afterPath="$PROJECT_DIR$/src/baseball/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baseball/Comparison.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baseball/Input.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baseball/Judge.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/baseball/Manager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baseball/Output.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/baseball/Comparison.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/baseball/Comparison.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/baseball/Judge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/baseball/Result.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/baseball/Output.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/baseball/Output.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/baseball/UserNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/baseball/UserNumber.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,7 +75,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1670233144836</updated>
-      <workItem from="1670233147426" duration="26205000" />
+      <workItem from="1670233147426" duration="48797000" />
     </task>
     <task id="LOCAL-00001" summary="feat: Init Commit Test">
       <created>1670234028391</created>
@@ -105,7 +105,49 @@
       <option name="project" value="LOCAL" />
       <updated>1670325470304</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="feat: 스트라이크 &amp; 볼 해당하는 조건 출력">
+      <created>1670330362233</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1670330362233</updated>
+    </task>
+    <task id="LOCAL-00006" summary="refactor: 입력 숫자 검증 및 저장">
+      <created>1670330398882</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1670330398882</updated>
+    </task>
+    <task id="LOCAL-00007" summary="feat: 메시지 출력">
+      <created>1670330415275</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1670330415275</updated>
+    </task>
+    <task id="LOCAL-00008" summary="이거 뭐지??">
+      <created>1670330437265</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1670330437265</updated>
+    </task>
+    <task id="LOCAL-00009" summary="feat: 스트라이크 인지 볼인지 찾기">
+      <created>1670330476568</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1670330476568</updated>
+    </task>
+    <task id="LOCAL-00010" summary="feat: 입력 및 관련하여 출력 메시지">
+      <created>1670330519919</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1670330519919</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,6 +169,12 @@
     <MESSAGE value="refactor: Ignore 수정" />
     <MESSAGE value="feat: 컴퓨터 랜덤 숫자 생성" />
     <MESSAGE value="feat: 유저 숫자 검증 및 저장" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 유저 숫자 검증 및 저장" />
+    <MESSAGE value="feat: 스트라이크 &amp; 볼 해당하는 조건 출력" />
+    <MESSAGE value="refactor: 입력 숫자 검증 및 저장" />
+    <MESSAGE value="feat: 메시지 출력" />
+    <MESSAGE value="이거 뭐지??" />
+    <MESSAGE value="feat: 스트라이크 인지 볼인지 찾기" />
+    <MESSAGE value="feat: 입력 및 관련하여 출력 메시지" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 입력 및 관련하여 출력 메시지" />
   </component>
 </project>
