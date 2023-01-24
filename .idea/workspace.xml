@@ -4,13 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ebad4f7b-fccd-409e-84b0-2f8c1ef3cf49" name="Changes" comment="refactor: 완료">
+    <list default="true" id="ebad4f7b-fccd-409e-84b0-2f8c1ef3cf49" name="Changes" comment="-">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/baseball/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/baseball/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/baseball/Count.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/baseball/MatchCount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/baseball/Input.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/baseball/Input.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/baseball/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/baseball/Manager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/baseball/UserNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/baseball/UserNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/baseball/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/baseball/ComputerNumber.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/baseball/Input.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/baseball/Manager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/baseball/MatchCount.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/baseball/Output.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/baseball/UserNumber.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,24 +44,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Java",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/sungwook/dev/java-baseball-ver2&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.Java&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager">
+}</component>
+  <component name="RunManager" selected="Application.test">
     <configuration name="baseball.Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="baseball.Application" />
       <module name="java-baseball-ver2" />
@@ -66,8 +70,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="baseball.test" />
+      <module name="java-baseball-ver2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="baseball.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.test" />
         <item itemvalue="Application.baseball.Application" />
       </list>
     </recent_temporary>
@@ -83,7 +101,11 @@
       <workItem from="1670233147426" duration="68508000" />
       <workItem from="1670497823493" duration="284000" />
       <workItem from="1670498177070" duration="301000" />
-      <workItem from="1670498485079" duration="6264000" />
+      <workItem from="1670498485079" duration="6401000" />
+      <workItem from="1670833247837" duration="47000" />
+      <workItem from="1670833429125" duration="12000" />
+      <workItem from="1671186793320" duration="3037000" />
+      <workItem from="1674546118894" duration="20000" />
     </task>
     <task id="LOCAL-00001" summary="feat: Init Commit Test">
       <created>1670234028391</created>
@@ -176,7 +198,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670499194536</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="-">
+      <created>1670504818975</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1670504818975</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -207,7 +236,8 @@
     <MESSAGE value="feat: 1차" />
     <MESSAGE value="refactor: 곤란하네???" />
     <MESSAGE value="refactor: 완료" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: 완료" />
+    <MESSAGE value="-" />
+    <option name="LAST_COMMIT_MESSAGE" value="-" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
