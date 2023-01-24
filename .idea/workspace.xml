@@ -4,16 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ebad4f7b-fccd-409e-84b0-2f8c1ef3cf49" name="Changes" comment="-">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="ebad4f7b-fccd-409e-84b0-2f8c1ef3cf49" name="Changes" comment="feat: 유저 숫자 입력, 재시작 입력">
+      <change afterPath="$PROJECT_DIR$/src/baseball/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/baseball/BaseballManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/baseball/MatchCount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/baseball/Output.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/baseball/StartNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/baseball/UserNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/baseball/UserNumberFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/baseball/Application.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/baseball/ComputerNumber.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/baseball/Input.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/baseball/Manager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/baseball/MatchCount.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/baseball/Output.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/baseball/UserNumber.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +61,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.test">
+  <component name="RunManager" selected="Application.baseball.Application">
     <configuration name="baseball.Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="baseball.Application" />
       <module name="java-baseball-ver2" />
@@ -85,8 +84,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.test" />
         <item itemvalue="Application.baseball.Application" />
+        <item itemvalue="Application.test" />
       </list>
     </recent_temporary>
   </component>
@@ -105,7 +104,7 @@
       <workItem from="1670833247837" duration="47000" />
       <workItem from="1670833429125" duration="12000" />
       <workItem from="1671186793320" duration="3037000" />
-      <workItem from="1674546118894" duration="20000" />
+      <workItem from="1674546118894" duration="7856000" />
     </task>
     <task id="LOCAL-00001" summary="feat: Init Commit Test">
       <created>1670234028391</created>
@@ -205,7 +204,28 @@
       <option name="project" value="LOCAL" />
       <updated>1670504818975</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="-">
+      <created>1674546162500</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1674546162500</updated>
+    </task>
+    <task id="LOCAL-00016" summary="feat: ComputerRandomNumber 기능">
+      <created>1674547768254</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1674547768254</updated>
+    </task>
+    <task id="LOCAL-00017" summary="feat: 유저 숫자 입력, 재시작 입력">
+      <created>1674547790099</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1674547790099</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -237,7 +257,9 @@
     <MESSAGE value="refactor: 곤란하네???" />
     <MESSAGE value="refactor: 완료" />
     <MESSAGE value="-" />
-    <option name="LAST_COMMIT_MESSAGE" value="-" />
+    <MESSAGE value="feat: ComputerRandomNumber 기능" />
+    <MESSAGE value="feat: 유저 숫자 입력, 재시작 입력" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 유저 숫자 입력, 재시작 입력" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
