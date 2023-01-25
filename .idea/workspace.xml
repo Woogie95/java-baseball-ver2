@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ebad4f7b-fccd-409e-84b0-2f8c1ef3cf49" name="Changes" comment="feat: 유저 숫자 입력, 재시작 입력">
-      <change afterPath="$PROJECT_DIR$/src/baseball/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baseball/BaseballManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baseball/MatchCount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baseball/Output.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baseball/StartNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baseball/UserNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baseball/UserNumberFactory.java" afterDir="false" />
+    <list default="true" id="ebad4f7b-fccd-409e-84b0-2f8c1ef3cf49" name="Changes" comment="feat: test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/baseball/MatchCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/baseball/MatchCount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/baseball/UserNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/baseball/UserNumber.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +99,7 @@
       <workItem from="1670833247837" duration="47000" />
       <workItem from="1670833429125" duration="12000" />
       <workItem from="1671186793320" duration="3037000" />
-      <workItem from="1674546118894" duration="7856000" />
+      <workItem from="1674546118894" duration="12676000" />
     </task>
     <task id="LOCAL-00001" summary="feat: Init Commit Test">
       <created>1670234028391</created>
@@ -225,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674547790099</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="feat: test">
+      <created>1674554009076</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1674554009076</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -259,7 +261,8 @@
     <MESSAGE value="-" />
     <MESSAGE value="feat: ComputerRandomNumber 기능" />
     <MESSAGE value="feat: 유저 숫자 입력, 재시작 입력" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 유저 숫자 입력, 재시작 입력" />
+    <MESSAGE value="feat: test" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: test" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

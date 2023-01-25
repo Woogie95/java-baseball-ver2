@@ -16,8 +16,11 @@ public class MatchCount {
     }
 
     public void findEqualNumber(UserNumber userNumber) {
-        if (userNumber.findEqualNumber()) {
-            new MatchCount(this.strike + 1, this.ball + 1);
+        if () { // true 면 strike + 1
+
+            new MatchCount(this.strike + 1, this.ball);
+            new MatchCount(this.strike + 1, this.ball +1);
+            new MatchCount(this.strike, this.ball+1);
         }
 
 

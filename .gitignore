@@ -32,6 +32,5 @@ bin/
 # Default ignored files
 /shelf/
 /workspace.xml
-.idea
 baseball-game.iml
 out

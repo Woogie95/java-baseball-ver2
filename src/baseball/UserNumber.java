@@ -11,7 +11,9 @@ public class UserNumber {
         this.userNumbers = validate(userNumbers);
     }
 
+    // 메시지를 전달해라
     public boolean findEqualNumber() {
+        List<Integer> list = ComputerNumber.createComputerRandomNumbers();
         for (int userNumber : this.userNumbers) {
             if (ComputerNumber.createComputerRandomNumbers().contains(userNumber)) {
                 isFindStrike(userNumber);
@@ -21,16 +23,14 @@ public class UserNumber {
 
     public boolean isFindStrike(int userNumber) {
         for (int computerNumber : ComputerNumber.createComputerRandomNumbers()) {
-            if (computerNumber == userNumber) {
-                return true;
-            }
+            return computerNumber == userNumber;
         }
+        return false;
     }
 
-    public void findBall() {
+    public boolean isFindBall() {
 
     }
-
 
     public List<Integer> validate(List<String> tempUserNumbers) {
         validateUserNumbersSize(tempUserNumbers);
