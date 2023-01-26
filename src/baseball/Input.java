@@ -8,11 +8,11 @@ public class Input {
 
     public static String inputUserNumber() {
         System.out.print("숫자를 입력해주세요 : ");
-        return SCANNER.next();
+        return SCANNER.nextLine();
     }
 
     public static String inputRestartNumber() {
-        return SCANNER.next();
+        return SCANNER.nextLine();
     }
 
 }

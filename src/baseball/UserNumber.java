@@ -11,31 +11,37 @@ public class UserNumber {
         this.userNumbers = validate(userNumbers);
     }
 
-    public boolean isEqualsNumbersContains() {
+    public boolean isEqualsNumbersContains(List<Integer> computerNumbers) {
         for (int userNumber : this.userNumbers) { // 컴퓨터숫자 안에 유저 숫자를 포함하고 있냐 true
-            return ComputerNumber.createComputerRandomNumbers().contains(userNumber);
+            return computerNumbers.contains(userNumber);
         }
         return false;
     }
 
-    public int isNumberLocationEquals() { // 숫자의 위치가 같냐 ?
+    public int findNumberLocationEquals(List<Integer> computerNumbers) { // 숫자의 위치가 같냐 ?
         int strike = 0;
-        int ball = 0;
         for (int i = 0; i < this.userNumbers.size(); i++) {
-            if (this.userNumbers.get(i).equals(ComputerNumber.createComputerRandomNumbers().get(i))) {
+            if (this.userNumbers.get(i).equals(computerNumbers.get(i))) {
                 strike++;
             }
-            ball++;
         }
-        return
-
+        return strike;
     }
 
+    public int findNumberLocationUnequals(List<Integer> computerNumbers) {
+        int ball = 0;
+        for (int i = 0; i < this.userNumbers.size(); i++) {
+            if (!this.userNumbers.get(i).equals(computerNumbers.get(i))) {
+                ball++;
+            }
+        }
+        return ball;
+    }
 
     public List<Integer> validate(List<String> tempUserNumbers) {
         validateUserNumbersSize(tempUserNumbers);
         validateNumberBlank(tempUserNumbers);
-        validateOverlap(tempUserNumbers);
+        validateNumberOverlap(tempUserNumbers);
         List<Integer> userNumbers = validateUserNumberType(tempUserNumbers);
         validateNumberRange(userNumbers);
         return userNumbers;
@@ -53,15 +59,9 @@ public class UserNumber {
         }
     }
 
-    public void validateOverlap(List<String> tempUserNumbers) {
-        for (String userNumber : tempUserNumbers) {
-            validateNumberOverlap(tempUserNumbers, userNumber);
-        }
-    }
-
-    public void validateNumberOverlap(List<String> tempUserNumbers, String userNumber) {
+    public void validateNumberOverlap(List<String> tempUserNumbers) {
         for (int i = 1; i < tempUserNumbers.size(); i++) {
-            if (userNumber.equals(tempUserNumbers.get(i))) {
+            if (tempUserNumbers.get(i - 1).equals(tempUserNumbers.get(i))) {
                 throw new IllegalArgumentException("중복되는 값이 있습니다.");
             }
         }

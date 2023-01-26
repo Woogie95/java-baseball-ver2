@@ -8,7 +8,7 @@ public class ComputerNumber {
 
     public static List<Integer> createComputerRandomNumbers() {
         Set<Integer> computerNumbers = new LinkedHashSet<>();
-        while (computerNumbers.size() < 6) {
+        while (computerNumbers.size() < 3) {
             computerNumbers.add(COMPUTER_RANDOM_NUMBER.nextInt(9) + 1);
         }
         return new ArrayList<>(computerNumbers);
