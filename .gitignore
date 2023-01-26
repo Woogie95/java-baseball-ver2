@@ -2,7 +2,6 @@
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
-.idea
 
 ### Eclipse ###
 .apt_generated
@@ -34,3 +33,4 @@ bin/
 /workspace.xml
 baseball-game.iml
 out
+.idea
