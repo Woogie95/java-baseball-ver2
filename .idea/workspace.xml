@@ -8,6 +8,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/baseball/MatchCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/baseball/MatchCount.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/baseball/UserNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/baseball/UserNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/baseball/UserNumberFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/baseball/UserNumberFactory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +100,7 @@
       <workItem from="1670833247837" duration="47000" />
       <workItem from="1670833429125" duration="12000" />
       <workItem from="1671186793320" duration="3037000" />
-      <workItem from="1674546118894" duration="12676000" />
+      <workItem from="1674546118894" duration="18167000" />
     </task>
     <task id="LOCAL-00001" summary="feat: Init Commit Test">
       <created>1670234028391</created>
@@ -227,7 +228,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674554009076</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="feat: test">
+      <created>1674647198762</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1674647198762</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

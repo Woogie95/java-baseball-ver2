@@ -1,5 +1,7 @@
 package baseball;
 
+import java.util.List;
+
 public class MatchCount {
 
     private final int strike;
@@ -15,14 +17,12 @@ public class MatchCount {
         this.ball = ball;
     }
 
-    public void findEqualNumber(UserNumber userNumber) {
-        if () { // true 면 strike + 1
+    public void findEqualNumbers(UserNumber userNumber, List<Integer> computerNumber) {
+        if (userNumber.isEqualsNumbersContains()) { // 포함하고 있냐
+            if (userNumber.isNumberLocationEquals()){
 
-            new MatchCount(this.strike + 1, this.ball);
-            new MatchCount(this.strike + 1, this.ball +1);
-            new MatchCount(this.strike, this.ball+1);
+            }
         }
-
 
     }
 

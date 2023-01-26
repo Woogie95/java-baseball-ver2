@@ -11,26 +11,26 @@ public class UserNumber {
         this.userNumbers = validate(userNumbers);
     }
 
-    // 메시지를 전달해라
-    public boolean findEqualNumber() {
-        List<Integer> list = ComputerNumber.createComputerRandomNumbers();
-        for (int userNumber : this.userNumbers) {
-            if (ComputerNumber.createComputerRandomNumbers().contains(userNumber)) {
-                isFindStrike(userNumber);
-            }
-        }
-    }
-
-    public boolean isFindStrike(int userNumber) {
-        for (int computerNumber : ComputerNumber.createComputerRandomNumbers()) {
-            return computerNumber == userNumber;
+    public boolean isEqualsNumbersContains() {
+        for (int userNumber : this.userNumbers) { // 컴퓨터숫자 안에 유저 숫자를 포함하고 있냐 true
+            return ComputerNumber.createComputerRandomNumbers().contains(userNumber);
         }
         return false;
     }
 
-    public boolean isFindBall() {
+    public int isNumberLocationEquals() { // 숫자의 위치가 같냐 ?
+        int strike = 0;
+        int ball = 0;
+        for (int i = 0; i < this.userNumbers.size(); i++) {
+            if (this.userNumbers.get(i).equals(ComputerNumber.createComputerRandomNumbers().get(i))) {
+                strike++;
+            }
+            ball++;
+        }
+        return
 
     }
+
 
     public List<Integer> validate(List<String> tempUserNumbers) {
         validateUserNumbersSize(tempUserNumbers);
