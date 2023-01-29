@@ -5,46 +5,30 @@ import java.util.List;
 public class BaseballManager {
 
     public void runBaseballGame() {
-        Output.printNumberBaseballGameStartMessage(); // 시작 메시지
+        Output.printNumberBaseballGameStartMessage();
         boolean startGame = true;
         while (startGame) {
-            List<Integer> computerNumbers = ComputerNumber.createComputerRandomNumbers();
+            List<Integer> computerNumbers = ComputerNumberFactory.createComputerRandomNumbers();
             System.out.println("컴퓨터 숫자" + computerNumbers);
-            startGame = false;
-
-
             boolean repeat = true;
             while (repeat) {
-                System.out.println("컴퓨터 숫자" + computerNumbers);
-                List<String> userNumbers = UserNumberFactory.createUserNumbers(Input.inputUserNumber());
-                UserNumber userNumber = new UserNumber(userNumbers);
                 MatchCount matchCount = new MatchCount();
+                UserNumber userNumber = new UserNumber(Input.inputUserNumber());
                 MatchCount newMatchCount = matchCount.addAllCount(userNumber, computerNumbers);
                 Output.printResult(newMatchCount);
-
-                // TODO - 컴퓨터 숫자 바뀌지 않고 일단 반복
-                if (Output.printGameExitMessage(newMatchCount)) {
-                    repeat = false;
-                }
+                repeat = hasThreeStrike(newMatchCount);
             }
-
-
-            // TODO - 1 or 2 입력했을 때 시작 및 종료 여부
-            StartNumber startNumber = new StartNumber(Input.inputRestartNumber());
-            if (startNumber.isReStartGame()) {
-                startGame = true;
-            }
-
-
+            startGame = isRetrySelect();
         }
     }
 
-    // TODO - 재시작 기능 나누기
-    public boolean asd(StartNumber startNumber) {
-        if (startNumber.isReStartGame()) { // 1이냐 그럼 트루고 다시 시작
-            return true;
-        }
-        return false;
+    public boolean hasThreeStrike(MatchCount newMatchCount) {
+        return !Output.printGameExitMessage(newMatchCount);
+    }
+
+    public boolean isRetrySelect() {
+        RestartNumber startNumber = new RestartNumber(Input.inputRestartNumber());
+        return startNumber.isReStartGame();
     }
 
 }

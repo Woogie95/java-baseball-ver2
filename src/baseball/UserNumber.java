@@ -3,23 +3,34 @@ package baseball;
 import java.util.ArrayList;
 import java.util.List;
 
+import static baseball.MatchCount.DEFAULT_BALL_NUMBER;
+import static baseball.MatchCount.DEFAULT_STRIKE_NUMBER;
+import static baseball.Output.STRIKE_MAX_VALUE;
+
 public class UserNumber {
+
+    private static final int NEXT_DEFAULT_NUMBER = 1;
+    private static final String USER_NUMBERS_HAS_BLANK = " ";
+    private static final int USER_NUMBER_MIN_RANGE = 1;
+    private static final int USER_NUMBER_MAX_RANGE = 9;
 
     private final List<Integer> userNumbers;
 
-    public UserNumber(List<String> userNumbers) {
-        this.userNumbers = validate(userNumbers);
+    public UserNumber(String userNumber) {
+        this.userNumbers = validate(userNumber);
     }
 
-    public boolean isEqualsNumbersContains(List<Integer> computerNumbers) {
-        for (int userNumber : this.userNumbers) { // 컴퓨터숫자 안에 유저 숫자를 포함하고 있냐 true
-            return computerNumbers.contains(userNumber);
+    public int hasUserNumbers(List<Integer> computerNumbers) {
+        for (int userNumber : this.userNumbers) {
+            if (computerNumbers.contains(userNumber)) {
+                return true;
+            }
+            return false;
         }
-        return false;
     }
 
-    public int findNumberLocationEquals(List<Integer> computerNumbers) { // 숫자의 위치가 같냐 ?
-        int strike = 0;
+    public int findNumberLocationEquals(List<Integer> computerNumbers) {
+        int strike = DEFAULT_STRIKE_NUMBER;
         for (int i = 0; i < this.userNumbers.size(); i++) {
             if (this.userNumbers.get(i).equals(computerNumbers.get(i))) {
                 strike++;
@@ -29,7 +40,7 @@ public class UserNumber {
     }
 
     public int findNumberLocationUnequals(List<Integer> computerNumbers) {
-        int ball = 0;
+        int ball = DEFAULT_BALL_NUMBER;
         for (int i = 0; i < this.userNumbers.size(); i++) {
             if (!this.userNumbers.get(i).equals(computerNumbers.get(i))) {
                 ball++;
@@ -38,7 +49,8 @@ public class UserNumber {
         return ball;
     }
 
-    public List<Integer> validate(List<String> tempUserNumbers) {
+    private List<Integer> validate(String userNumber) {
+        List<String> tempUserNumbers = divideUserNumbers(userNumber);
         validateUserNumbersSize(tempUserNumbers);
         validateNumberBlank(tempUserNumbers);
         validateNumberOverlap(tempUserNumbers);
@@ -47,27 +59,31 @@ public class UserNumber {
         return userNumbers;
     }
 
-    public void validateUserNumbersSize(List<String> tempUserNumbers) {
-        if (tempUserNumbers.size() != 3) {
+    private List<String> divideUserNumbers(String userNumber) {
+        return List.of(userNumber.split(""));
+    }
+
+    private void validateUserNumbersSize(List<String> tempUserNumbers) {
+        if (tempUserNumbers.size() != STRIKE_MAX_VALUE) {
             throw new IllegalArgumentException("입력한 숫자가 3개가 아닙니다.");
         }
     }
 
-    public void validateNumberBlank(List<String> tempUserNumbers) {
-        if (tempUserNumbers.contains(" ")) {
+    private void validateNumberBlank(List<String> tempUserNumbers) {
+        if (tempUserNumbers.contains(USER_NUMBERS_HAS_BLANK)) {
             throw new IllegalArgumentException("입력한 값안에 공백이 포함되어 있습니다.");
         }
     }
 
-    public void validateNumberOverlap(List<String> tempUserNumbers) {
+    private void validateNumberOverlap(List<String> tempUserNumbers) {
         for (int i = 1; i < tempUserNumbers.size(); i++) {
-            if (tempUserNumbers.get(i - 1).equals(tempUserNumbers.get(i))) {
+            if (tempUserNumbers.get(i - NEXT_DEFAULT_NUMBER).equals(tempUserNumbers.get(i))) {
                 throw new IllegalArgumentException("중복되는 값이 있습니다.");
             }
         }
     }
 
-    public List<Integer> validateUserNumberType(List<String> tempUserNumbers) {
+    private List<Integer> validateUserNumberType(List<String> tempUserNumbers) {
         List<Integer> userNumbers = new ArrayList<>();
         try {
             for (String number : tempUserNumbers) {
@@ -79,16 +95,12 @@ public class UserNumber {
         return userNumbers;
     }
 
-    public void validateNumberRange(List<Integer> tempUserNumbers) {
+    private void validateNumberRange(List<Integer> tempUserNumbers) {
         for (int userNumber : tempUserNumbers) {
-            if (userNumber < 1 || userNumber > 9) {
+            if (userNumber < USER_NUMBER_MIN_RANGE || userNumber > USER_NUMBER_MAX_RANGE) {
                 throw new IllegalArgumentException("숫자가 1~9 범위가 아닙니다.");
             }
         }
-    }
-
-    public List<Integer> getUserNumbers() {
-        return userNumbers;
     }
 
 }

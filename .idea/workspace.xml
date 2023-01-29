@@ -4,16 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ebad4f7b-fccd-409e-84b0-2f8c1ef3cf49" name="Changes" comment="feat: test">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="ebad4f7b-fccd-409e-84b0-2f8c1ef3cf49" name="Changes" comment="feat: 기능 구현">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/baseball/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/baseball/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/baseball/BaseballManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/baseball/BaseballManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/baseball/ComputerNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/baseball/ComputerNumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/baseball/Input.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/baseball/Input.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/baseball/ComputerNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/baseball/ComputerNumberFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/baseball/MatchCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/baseball/MatchCount.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/baseball/Output.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/baseball/Output.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/baseball/StartNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/baseball/StartNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/baseball/StartNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/baseball/RestartNumber.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/baseball/UserNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/baseball/UserNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/baseball/UserNumberFactory.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +105,7 @@
       <workItem from="1670833247837" duration="47000" />
       <workItem from="1670833429125" duration="12000" />
       <workItem from="1671186793320" duration="3037000" />
-      <workItem from="1674546118894" duration="32361000" />
+      <workItem from="1674546118894" duration="41241000" />
     </task>
     <task id="LOCAL-00001" summary="feat: Init Commit Test">
       <created>1670234028391</created>
@@ -254,7 +254,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674742218308</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="feat: 기능 구현">
+      <created>1674756374106</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1674756374106</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -289,7 +296,8 @@
     <MESSAGE value="feat: ComputerRandomNumber 기능" />
     <MESSAGE value="feat: 유저 숫자 입력, 재시작 입력" />
     <MESSAGE value="feat: test" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: test" />
+    <MESSAGE value="feat: 기능 구현" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 기능 구현" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
